@@ -1,2 +1,3 @@
+test 3
 test #2
 this is a test to see if my commits are gpg signed.
