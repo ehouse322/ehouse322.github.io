@@ -1,0 +1,8 @@
+<!-- ---
+layout: post
+title:  "test post life"
+date:   2016-11-02
+category: life
+---
+
+test post for life subsection! -->

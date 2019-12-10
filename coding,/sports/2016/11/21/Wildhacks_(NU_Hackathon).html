@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Wildhacks (NU Hackathon)!</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/coding,/sports/2016/11/21/Wildhacks_(NU_Hackathon).html">
+  <link rel="alternate" type="application/rss+xml" title="Evan House" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Evan House</a>
+
+    <nav class="site-nav">
+      <span class="menu-icon">
+        <svg viewBox="0 0 18 15" width="18px" height="15px">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </span>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">about</a>
+          
+        
+          
+          <a class="page-link" href="/coding/">coding</a>
+          
+        
+          
+          <a class="page-link" href="/faith/">faith</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/life/">life</a>
+          
+        
+          
+          <a class="page-link" href="/sports/">sports</a>
+          
+        
+          
+          <a class="page-link" href="/thoughts/">thoughts</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Wildhacks (NU Hackathon)!</h1>
+    <p class="post-meta"><time datetime="2016-11-21T00:00:00-06:00" itemprop="datePublished">Nov 21, 2016</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <head>
+<style>
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
+</head>
+
+<p>This past weekend, Northwestern held their annual hackathon called Wildhacks. I remember seeing participants in the events the past few years; I was always impressed and slightly intimidated seeing them at work/play. This year, I finally was a participant myself, and I wish I had gotten involved sooner.</p>
+
+<p>The coding portion of the hackathon began Friday night around 10pm and ran until Sunday morning 10am. A few buddies and I got together for dinner (provided by Wildhacks) and got talking about our idea. My friend Eugene and I are big League of Legends/esports fans, so we wanted to work on a project in that direction.</p>
+
+<p>Over the past couple weeks I had been thinking about the developing e-sports industry– the 2015 League World Championships had 36 million viewers compared to 31 million viewers for the most viewed NBA Finals in the past 19 years! Over the past 10-15 years, sports data analysis has become huge, and I would not be surprised if something similar happens with e-sports like League of Legends. For this reason, my friends and I thought we would use the Riot Games API to pull live data, and use a machine learning algorithm like id3 to develop a win chance predictor. The idea was for the end product to look something like this:</p>
+
+<p><img src="http://localhost:4000/assets/espn_predictor.png" alt="espn predictor" class="img-responsive center" /></p>
+
+<p>However, after we took a closer look at the API and had made some requests, we realized the live game data which Riot provides is very limited. Since we found that there is no way to get live updated statistics on a League of Legends game, we changed up our plans and decided to build a live box score with the basics statistics. We also decided to include a predictor like above, however our focus was on building the web app and not the algorithm.</p>
+
+<p>The app was basically a pure JavaScript application, built with Node, Angular, Express and mongoDB. JavaScript is pretty new to me, so I was happy becauseI learned a lot lot lot. We starte Friday night and my friend who has a lot more experience in JavaScript set up the directory framework. We also spent some time talking about design, and how our app would look. We wrote our HTML file and styled it after the way League of Legends live viewers receive their statistics.</p>
+
+<p>Our app had two main sides, and both were modeled after this initial HTML file. Because Riot’s API did not give us much information about the live game data, we had to make a data entry form for someone who is following the game. Just as there are reporters who record data as it happens (<a href="http://www.stats.com/join-our-team/#positions">Data Reporter Positon</a>), we built the framework for a League Data Reporter to enter data. Our data entry form looks like this:</p>
+
+<p>You can start by creating a game here:</p>
+
+<p><img src="http://localhost:4000/assets/lol_data_entry1.png" alt="LoLCast Create Data Entry" class="img-responsive center" /></p>
+
+<p>Once you see the data entry page, the user may update the team names and team member names. After that, it is easy to update statistics with a click of a button. Here is what it looks like:</p>
+
+<p><img src="http://localhost:4000/assets/lol_data_entry2.png" alt="LoLCast Data Entry Form" class="img-responsive center" /></p>
+
+<p>On the other end, the user can choose a game from our home page (ignore all the test games :P) :</p>
+
+<p><img src="http://localhost:4000/assets/lol_homepage.png" alt="LoLCast Home Page" class="img-responsive center" /></p>
+
+<p>Once the user chooses a game, he can follow the game live. The page updates every 4 seconds:</p>
+
+<p><img src="http://localhost:4000/assets/lol_game_view.png" alt="LoLCast View Game" class="img-responsive center" /></p>
+
+<p>And that is the simplest explanation of our web app! As I said before, I had never participated in a hackathon before, but I really enjoyed this experience. Maybe when my roommate and I are done taking classes after Winter quarter, we will travel to a bunch of hackathons in the Spring. I learned a <em>ton</em> during this hackathon. Before we started, I had barely any exposure to JavaScript, and now we have a fully functioning JavaScript web application! I particularly enjoyed learning how to connect the information in the database on the backend to the win prediction algorithm I had written, and then turning that into a pretty display on the front end.</p>
+
+<p>Some of the things we ran into while writing the algorithm were interesting as well. We found that at the beginning of the game, the win probability was more volatile, and later on, the win probability changed  slowly. In reality though, getting objectives later on in a game of League of Legends tends to have a much greater impact. We accounted for this by assigning different weights to the objectives based on the number of events which had occured. That said, our algorithm still needs more work!</p>
+
+<p>I am also more used to working on my own on a project, but it was fun to work together in a team. When we were discussing ideas and design, I found it really helpful to have other people to talk it over with. Naturally we have our own blind spots, so we can help each other spot those, then work together to have the best design. We are talking about turning the app into a Google Chrome extension that would allow the user to pool up the box score, <em>while</em> they’re watching the game on Twitch.</p>
+
+<p>By the end of the hackathon, I was pretty exhausted, and the 3:30am - 5:30am stretch on Sunday morning was pretty tough, but once the sun started to come back out I was good to go. I am still recovering, but I am looking forward to the next hackathon :)</p>
+
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Evan House</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Evan House
+            
+            </li>
+            
+            <li><a href="mailto:ehouse@u.northwestern.edu">ehouse@u.northwestern.edu</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/ehouse322"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">ehouse322</span></a>
+
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>My name is Evan and this is my website :D
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
