@@ -1,29 +1,30 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "thoughts on John 3 (Part 1)"
 date:   2019-12-12 22:17:46 -0600
-categories: jekyll update
+categories: bible jesus
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+***John 3:20-21**\
+<sup>19</sup>And this is the judgment: the light has come into the world, and people loved the darkness rather than 
+the light because their works were evil. <sup>20</sup> For everyone who does wicked things hates the light and does not 
+come to the light, lest his works should be exposed. <sup>21</sup> But whoever does what is true comes to the light, so 
+that it may be clearly seen that his works have been carried out in God.”*
 
-`YEAR-MONTH-DAY-title.MARKUP`
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+In John 3, Jesus tells a pharisee one must be born again to see the kingdom of God. The pharisee is confused and asks,
+"How can these things be?" Jesus speaks and ends his teaching with these verses. Because of my temperament or conscience
+I stumbled on verse 21-- "whoever does what is true comes to the light."
 
-Jekyll also offers powerful support for code snippets:
+This cross referenced 1 John, where I read things like, "*If we say we have fellowship with him while we walk in 
+darkness, we lie and do not practice the truth.*" Or, "*by this we know that we have come to know him, if we keep his 
+commandments*," and, "*Whoever says 'I know him' but does not keep his commandments is a liar, and the truth is not 
+in him.*"
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+My mind is overwhelmingly bent towards condemnation. I fail to keep His commandments. I can't say with a clear
+conscience that I do what is true. I can not definitively say that I do not walk in darkness.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+And so often my Bible reading ends maybe seeing, but glossing over a verse (or many verses) of promise. There are many 
+in between the verses I quoted. Ultimately, however, I tend to leave the Bible discouraged that I don't sound or feel 
+like the Christian that the Bible is describing.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
