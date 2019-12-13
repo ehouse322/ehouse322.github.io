@@ -2,10 +2,10 @@
 layout: post
 title:  "thoughts on John 3 (Part 1)"
 date:   2019-12-12 22:17:46 -0600
-categories: bible jesus
+categories: bible jesus john
 ---
 
-***John 3:20-21**\
+***John 3:20-21**<br />
 <sup>19</sup>And this is the judgment: the light has come into the world, and people loved the darkness rather than 
 the light because their works were evil. <sup>20</sup> For everyone who does wicked things hates the light and does not 
 come to the light, lest his works should be exposed. <sup>21</sup> But whoever does what is true comes to the light, so 

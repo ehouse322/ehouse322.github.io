@@ -4,3 +4,5 @@ _site
 .jekyll-metadata
 vendor
 .idea/
+.DS_store
+_sass/.DS_store
