@@ -1,0 +1,5 @@
+---
+date: 2019-12-15 16:56
+---
+
+added scripts to automatically generate new posts and notes with front matter
