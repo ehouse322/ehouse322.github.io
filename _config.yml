@@ -28,6 +28,7 @@ url: "ehouse322.github.io" # the base hostname & protocol for your site, e.g. ht
 github_username: ehouse322
 collections:
   - notes
+  - books
 sass:
   sass_dir: _sass
 
